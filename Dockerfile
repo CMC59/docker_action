@@ -9,4 +9,4 @@ COPY . .
 
 EXPOSE 5000
 
-CMD ["python", "app.py"]  # ou le fichier principal de ton app
+CMD ["python3", "app/app.py"]
