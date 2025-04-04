@@ -1,0 +1,5 @@
+flask
+mapbox
+requests
+flask-cors
+flask-socketio
