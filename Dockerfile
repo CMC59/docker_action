@@ -1,7 +1,12 @@
 FROM python:3.9-slim
 
-CMD [ "pip", "install", "--no-cache-dir", "-r", "/requirements.txt" ]
+WORKDIR /app
 
-COPY . /app
+COPY requirements.txt . 
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
 
 EXPOSE 5000
+
+CMD ["python", "app.py"]  # ou le fichier principal de ton app
