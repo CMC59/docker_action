@@ -1,6 +1,6 @@
 FROM flask:latest
 
-COPY . /app.py
+COPY . /app
 
 EXPOSE 5000
 
